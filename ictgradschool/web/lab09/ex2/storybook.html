@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Story Book</title>
+        <style type="text/css">
+            .grid-container {
+                margin: auto;
+                display: grid;
+                grid-template-columns: 25px 500px 500px 25px;
+                grid-template-rows: auto 650px auto;
+                grid-template-areas:
+                    "header header header header"
+                    "turn-left page-left page-right turn-right"
+                    "footer footer footer footer";
+            }
+
+            .header {
+                grid-area: header;
+                display: flex;
+                justify-content: center;
+            }
+
+            .footer {
+                grid-area: footer;
+                display: flex;
+                justify-content: center;
+            }
+
+            .page {
+                background-color: ivory;
+                border: 1px solid sandybrown;
+                padding: 1em;
+            }
+
+            #page-right > h1,h2,h3,h4,h5,h6,p {
+                display: flex;
+                justify-content: center;
+            }
+
+            body > div {
+                display: flex;
+                justify-content: center;
+            }
+
+            .control { background-color: sandybrown; }
+            #page-left { grid-area: page-left; }
+            #page-left > img { width: 100%; }
+            #page-right { grid-area: page-right; }
+            #page-right div { margin-top: 1em; }
+            #page-right span { display: block; }
+            #page-right span:nth-child(even) { margin-left: 1em; }
+            #page-right > div { margin-left: 8em; }
+            #turn-left { grid-area: turn-left; }
+            #turn-right { grid-area: turn-right; }
+        </style>
+        <script type="text/javascript">
+            // Use this variable to hold the endpoint response for the current page
+            var current_page_info;
+
+            // This function will control what happens then we want to load the previous page
+            function previous_page() {
+                /* TODO: If the `current_page_info` object contains a link to the
+                 * previous page, call the `load_page` function with that URL */
+            }
+
+            // This function will control what happens then we want to load the next page
+            function next_page() {
+                /* TODO: If the `current_page_info` object contains a link to the
+                 * next page, call the `load_page` function with that URL */
+            }
+
+            function load_page(page_url) {
+                /* TODO: In an ajax call, GET the URL provided in the `page_url`
+                 * parameter
+                 *
+                 * TODO: Update the `current_page_info` variable with the object
+                 * received from the request
+                 *
+                 * TODO: Update the `current-page` span with the page number of the
+                 * currently displayed page. HINT: There is a value in the returned object that
+                 * tells you this
+                 *
+                 * TODO: Replace the current contents of the right-hand page div with
+                 * the content provided in the returned object
+                 *
+                 * TODO: Create a new img element, and set its src attribute
+                 * to the image URL provided in the response. Replace the contents of the left-hand
+                 * page with this new img */
+            }
+
+            window.addEventListener("load", function() {
+                /* TODO: Add code that calls the `previous_page` function when the
+                 * `turn-left` div is clicked */
+
+                /* TODO: Add code that calls the `next_page` function when the
+                 * `turn-right` div is clicked */
+
+                /* TODO: In an ajax call, GET the `story` endpoint with no arguments.
+                 * The response will be an array of URLs
+                 *
+                 * TODO: The number of elements in this array tells you the number of pages
+                 * in the book. Use this information to update the value in the `total-page` span
+                 *
+                 * TODO: Call the `load_page` function with the first url in the array to
+                 * load the first page of the book */
+            });
+        </script>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="header"><h1>The Absurd A.B.C</h1></div>
+
+            <div id="page-left" class="page">
+                <p>Images here</p>
+            </div>
+
+            <div id="page-right" class="page">
+                <h1>Page Text Here</h1>
+            </div>
+
+            <div id="turn-left" class="control"></div>
+            <div id="turn-right" class="control"></div>
+
+            <div class="footer"><p>Page <span id="current-page">?</span> / <span id="total-page">?</span></p></div>
+        </div>
+    </body>
+</html>

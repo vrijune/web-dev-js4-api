@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Video Rentals</title>
+
+        <script type="text/javascript" src="customerdb.js"></script>
+        <script type="text/javascript">
+            window.addEventListener("load", function () {
+                /* TODO: Your code here */
+            });
+        </script>
+
+        <style>
+            table {
+                width: 100%;
+                border: 1px solid grey;
+            }
+
+            tr {
+                height: 3em;
+            }
+
+            td {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            thead {
+                background: lightseagreen;
+                color: white;
+                font-weight: bold;
+            }
+
+            tbody > tr:hover {
+                background: yellow;
+            }
+
+            tbody > tr:nth-child(even) {
+                background: lightgrey;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Rental Details</h1>
+
+        <table id="details"></table>
+
+        <hr>
+
+        <h1>Rental Statistics</h1>
+
+        <table id="statistics"></table>
+    </body>
+</html>
