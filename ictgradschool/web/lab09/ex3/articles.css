@@ -1,0 +1,72 @@
+.grid-container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 700px 300px;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+            "header header"
+            "articles information"
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+}
+
+#articles { grid-area: articles; }
+#information { grid-area: information; }
+
+.article-author {
+    color: black;
+    text-shadow: none;
+
+}
+
+.article-author:hover {
+    color: ivory;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.article,#user-details {
+    margin: 0.25em;
+    padding: 0.5em;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: teal;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+.article-load {
+    margin-top: 2em;
+    background-color: darkgreen;
+}
+
+.panel {
+    padding: 1em;
+    border: 1px solid salmon;
+    border-radius: 15px;
+    margin: 0.25em;
+}
+
+.panel > h2 {
+    text-align: center;
+}
+
+body {
+    background-color: linen;
+}
+
+body > div {
+    display: flex;
+    justify-content: center;
+}

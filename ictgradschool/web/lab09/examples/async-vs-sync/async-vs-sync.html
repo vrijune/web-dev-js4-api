@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="async-vs-sync.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="async-vs-sync.css" type="text/css">
+</head>
+<body>
+<div>
+    <h3>Demo of standard synchronous/blocking code</h3>
+    <p>When functionTwo() is called, the program will wait until it finishes.</p>
+    <button id="sync">SYNCHRONOUS DEMO</button>
+    <code>
+         <pre>
+        let x = undefined;
+        function functionOne(){
+            x = 1;
+            alert("B: " + x);
+            functionTwo();
+            alert("D: " + x);
+        }
+        function functionTwo(){
+            x = 2;
+            alert("C: " + x);
+        }
+        alert("A: " + x);
+        functionOne();
+        alert("E: " + x);
+         </pre>
+    </code>
+</div>
+<div>
+    <h3>Demo of asynchronous/non-blocking code</h3>
+    <p>functionTwo() is asynchronous so the rest of the sequence will continue while it awaits the AJAX response.</p>
+    <button id="async">ASYNCHRONOUS DEMO</button>
+    <code>
+         <pre>
+        let x = undefined;
+        function functionOne(){
+            x = 1;
+            alert("B: " + x);
+            functionTwo();
+            alert("D: " + x);
+        }
+        async function functionTwo(){
+            let articleResponseObj = await fetch(`https://sporadic.nz/ajax/articles?id=1`);
+            x = 2;
+            alert("C: " + x);
+        }
+        alert("A: " + x);
+        functionOne();
+        alert("E: " + x);
+         </pre>
+    </code>
+</div>
+</body>
+</html>

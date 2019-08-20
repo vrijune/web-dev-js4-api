@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>An Examples Page</title>
+        <style>
+            .button {
+                border: 1px solid black;
+                box-shadow: grey 2px 2px 2px;
+                width: 20em;
+                height: 5em;
+                background: beige;
+
+                font-family: Calibri, Menlo, sans-serif;
+                font-size: larger;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+        </style>
+
+        <script type="text/javascript" src="../../lib/ajax-utilities.js"></script>
+        <script type="text/javascript" src="01-json.js"></script>
+        <script type="text/javascript" src="02-ajax-xhr.js"></script>
+        <script type="text/javascript" src="03-ajax-fetch.js"></script>
+    </head>
+    <body>
+        <p>All of these buttons will generate output, some informational, some as their complete function. Please open your browser inspector console to see the output, and follow along with the source code.</p>
+
+        <div class="button" id="doJson"><span>Press for JSON demo</span></div>
+
+        <br>
+
+        <div class="button" id="doXhr"><span>Press for XHR demo</span></div>
+        <div id="xhrDestination"></div>
+
+        <br>
+        <div class="button" id="doFetch"><span>Press for Fetch demo</span></div>
+        <div id="fetchDestination"></div>
+    </body>
+</html>
