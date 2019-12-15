@@ -4,9 +4,9 @@ window.addEventListener("load", function () {
     /*    Chaining fetch requests with async await.
     * The second request depends on the result of the first one. */
     async function chainRequestsAsyncAwait() {
-        let articleResponse = await fetch(`https://sporadic.nz/ajax/articles?id=1`);
+        let articleResponse = await fetch(`https://trex-sandwich.com/ajax/articles?id=1`);
         let articleJson = await articleResponse.json();
-        let userResponse = await fetch(`https://sporadic.nz/ajax/users?id=${articleJson.author_id}`);
+        let userResponse = await fetch(`https://trex-sandwich.com/ajax/users?id=${articleJson.author_id}`);
         let userJson = await userResponse.json();
         console.log(`Async await with fetch: ${articleJson.title} was written by ${userJson.first_name}`);
     }
@@ -26,13 +26,13 @@ window.addEventListener("load", function () {
     }
 
     async function getFullArticleObj(articleId) {
-        let articleResponseObj = await fetch(`https://sporadic.nz/ajax/articles?id=${articleId}`);
+        let articleResponseObj = await fetch(`https://trex-sandwich.com/ajax/articles?id=${articleId}`);
         let articleJson = await articleResponseObj.json();
         return articleJson;
     }
 
     async function getUserObj(userId) {
-        let userResponseObj = await fetch(`https://sporadic.nz/ajax/users?id=${userId}`);
+        let userResponseObj = await fetch(`https://trex-sandwich.com/ajax/users?id=${userId}`);
         let userJsonObj = await userResponseObj.json();
         return userJsonObj;
     }

@@ -31,7 +31,7 @@ window.addEventListener("load",function(){
             alert("D: " + x);
         }
         async function functionTwo(){
-            let articleResponseObj = await fetch(`https://sporadic.nz/ajax/articles?id=1`);
+            let articleResponseObj = await fetch(`https://trex-sandwich.com/ajax/articles?id=1`);
             x = 2;
             alert("C: " + x);
         }

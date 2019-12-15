@@ -1,7 +1,7 @@
 window.addEventListener("load", function () {
 
     async function displayArticles(){
-        let articlesResponseObj = await fetch(`https://sporadic.nz/ajax/articles`);
+        let articlesResponseObj = await fetch(`https://trex-sandwich.com/ajax/articles`);
         let articleArray = await articlesResponseObj.json();
         displayJSONString(articleArray);
         for (let i = 0; i < articleArray.length; i++) {

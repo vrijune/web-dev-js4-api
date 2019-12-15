@@ -14,7 +14,7 @@ window.addEventListener("load", function () {
 
     async function getFullArticleObj(articleId) {
         alert(`Step 2: getting article.`);
-        let articleResponseObj = await fetch(`https://sporadic.nz/ajax/articles?id=${articleId}`);
+        let articleResponseObj = await fetch(`https://trex-sandwich.com/ajax/articles?id=${articleId}`);
         alert(`Step 3: received response:${articleResponseObj}, next step, convert to JSON.`);
         let articleJson = await articleResponseObj.json();
         alert(`Step 4: converted ID-${articleJson.id} to JSON and returning JSON object.`);
@@ -23,7 +23,7 @@ window.addEventListener("load", function () {
 
     async function getUserObj(userId) {
         alert(`Step 7: getting user JSON object.`);
-        let userResponseObj = await fetch(`https://sporadic.nz/ajax/users?id=${userId}`);
+        let userResponseObj = await fetch(`https://trex-sandwich.com/ajax/users?id=${userId}`);
         alert(`Step 8: received response${userResponseObj}, next step, convert to JSON.`);
         let userJsonObj = await userResponseObj.json();
         alert(`Step 9: received response ID-${userResponseObj.id}, next step, convert to JSON.`);

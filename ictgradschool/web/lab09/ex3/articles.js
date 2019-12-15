@@ -38,13 +38,13 @@ window.addEventListener("load", function () {
     // parameterised async functions for all requests
     // returning from async function means that they will need to be used within an async function
     async function getArticleArray(from, count) {
-        let articlesResponseObj = await fetch(`https://sporadic.nz/ajax/articles?from=${from}&count=${count}`);
+        let articlesResponseObj = await fetch(`https://trex-sandwich.com/ajax/articles?from=${from}&count=${count}`);
         let articlesJsonArray = await articlesResponseObj.json();
         return articlesJsonArray;
     }
 
     async function getUserObj(userId) {
-        let userResponseObj = await fetch(`https://sporadic.nz/ajax/users?id=${userId}`);
+        let userResponseObj = await fetch(`https://trex-sandwich.com/ajax/users?id=${userId}`);
         let userJsonObj = await userResponseObj.json();
         return userJsonObj;
     }

@@ -7,7 +7,7 @@ window.addEventListener("load", function() {
          *
          * The official way to use the fetch API would be to use the fetch() function here. You can find the documentation
          * for it here: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch */
-        buildFetch("https://sporadic.nz/ajax/story", "GET", { page: 2 })
+        buildFetch("https://trex-sandwich.com/ajax/story", "GET", { page: 2 })
 
             /* The fetch API is built on 'promises' - objects that will contain data, eventually. We can await these
              * promises to be fulfilled and then do something with them. .then() functions can be chained onto the

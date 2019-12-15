@@ -21,9 +21,9 @@ as parameters to display more complete information.
 Exercise 2 &ndash; A Friendly API
 ==========
 
-The aim of the following exercises is to experiment with AJAX. You will be using a service created expressly for this purpose, which can be found at https://sporadic.nz/ajax/. A list of all endpoints and their options can be found at this URL.
+The aim of the following exercises is to experiment with AJAX. You will be using a service created expressly for this purpose, which can be found at https://trex-sandwich.com/ajax/. A list of all endpoints and their options can be found at this URL.
 
-In this exercise you will use the simple https://sporadic.nz/ajax/story endpoint to create a simple story book. This 
+In this exercise you will use the simple https://trex-sandwich.com/ajax/story endpoint to create a simple story book. This 
 will consist of two visible pages forming a book, with clickable areas on either side of the book that will allow for
  turning to the next or previous pages. The HTML and CSS for this has been provided to you - preview the 
  `ex2/storybook.html` page and look through the source to understand how it is put together. 
@@ -33,8 +33,8 @@ The endpoint is very simple.  If it is called directly with no parameters it wil
 
 ```json
 [
-    "https://sporadic.nz/ajax/story?page=1", 
-    "https://sporadic.nz/ajax/story?page=2", 
+    "https://trex-sandwich.com/ajax/story?page=1", 
+    "https://trex-sandwich.com/ajax/story?page=2", 
     ...
 ]
 ```
@@ -45,8 +45,8 @@ and next/previous page URLs where applicable:
 
 ```json
 {
-    "next_page":"https://sporadic.nz/ajax/story?page=2",
-    "image":"https://sporadic.nz/ajax/img/cover.jpg",
+    "next_page":"https://trex-sandwich.com/ajax/story?page=2",
+    "image":"https://trex-sandwich.com/ajax/img/cover.jpg",
     "page_number":1,
     "content":"<h2>...</h2>"
 }
@@ -64,8 +64,8 @@ Add simple console logging statements to the `previous_page()` and `next_page()`
 is clicked, your message should be printed to the browser developer console.
 
 2. In the initalisePage() function, complete the TODO items. In these TODO steps you will use fetch to perform an AJAX GET request to the 
-`https://sporadic.nz/ajax/story` endpoint and get a JSON object from the response. Look carefully at the data that is retrieved from 
-the `https://sporadic.nz/ajax/story` endpoint.
+`https://trex-sandwich.com/ajax/story` endpoint and get a JSON object from the response. Look carefully at the data that is retrieved from 
+the `https://trex-sandwich.com/ajax/story` endpoint.
  On a successful call, your code should use the received data to update the `total-page` span with the total number of pages in the book. In the same 
  success function, make a call to the `load_page()` function. This function expects a URL to be provided for it to fetch as a parameter - provide the 
  URL of the first page of the book.
@@ -86,7 +86,7 @@ function this time calling `load_page()` with the URL for the next page of the s
 6. Test your story book and ensure that the next and previous page functionality works without errors. Be sure to check the browser 
 development console and ensure there are no console logging messages or other errors appearing.
 
-```****```
+
 Exercise Three &ndash; A Less-Friendly API
 ==============
 
@@ -112,7 +112,7 @@ variables to load new articles each time. You should also make sure that the loa
 the event listener. You should change the background colour to red when there are no more articles left. 
 
 3. Complete the getFullArticleObj(), and getLikesArray() functions so that they make requests to the appropriate endpoints and return
-JSON objects. You should look at the reference information for different endpoints on https://sporadic.nz/ajax/ . These functions will be very similar 
+JSON objects. You should look at the reference information for different endpoints on https://trex-sandwich.com/ajax/ . These functions will be very similar 
 to the getArticleArray() and getUserObj() functions. Think about how you could test these functions with function calls and console messages or the debugger
  to check that they are working as intended. 
 

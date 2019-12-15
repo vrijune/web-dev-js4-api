@@ -75,7 +75,7 @@ window.addEventListener("load", function() {
 
         /* The parameterizeURL function can be found in lib/ajax-utilities.js . It generates a query string from a JSON
          * object and appends it to the provided string - saving you the trouble! */
-        xhr.open("GET", parameterizeURL("https://sporadic.nz/ajax/articles", {id: 2}), true);
+        xhr.open("GET", parameterizeURL("https://trex-sandwich.com/ajax/articles", {id: 2}), true);
         xhr.send();
     });
 });
