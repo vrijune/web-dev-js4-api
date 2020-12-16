@@ -15,6 +15,8 @@ window.addEventListener("load", function () {
         articleDivElement.innerHTML = `
             <h3 class="article-title">${articleObj.title}</h3>
             <p class="article-body">${articleObj.content}</p>
+            <p class="id">${articleObj.id}</p>
+            <p class="authorId">${articleObj.author_id}</p>
         `;
 
         let articlesDiv = document.querySelector("#articles-inner");
