@@ -1,4 +1,4 @@
-Web Lab 09 &ndash; Advanced JavaScript
+Web Lab 09 &ndash; Advanced JavaScript、AJAX
 ==========
 
 Exercise 1 &ndash; Familiarising Yourself with AJAX, Fetch and Async Functions with Await
@@ -7,6 +7,7 @@ Exercise 1 &ndash; Familiarising Yourself with AJAX, Fetch and Async Functions w
 This is a very quick activity. The goal is to observe how a fetch request works and how to access the data. Open the HTML page for Exercise 1 and
 have a look at the JSON string received from the server and the HTML elements that are currently generated from the JSON object. Observe how JSON values
 are accessed and added to the HTML. 
+
 
 1. Now also display the id and author_id properties in the HTML by accessing these fields from the JSON object and creating HTML elements to display them. 
 Observe how we do not have the full text of the articles of the name of the authors. In activity 3 you will use more AJAX endpoints with these ids 
