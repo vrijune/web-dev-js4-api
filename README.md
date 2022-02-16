@@ -1,6 +1,6 @@
 Web Lab 09 &ndash; Advanced JavaScript & AJAX
 ==========
-
+Today's 
 Exercise 1 &ndash; Familiarising Yourself with AJAX, Fetch and Async Functions with Await
 ==========
 
