@@ -120,4 +120,6 @@ remember that the correct div will be a sibling of the div that was clicked.
 5. There is also an event listener that calls the displayAuthorDetailsOnPage() function. You should use the getUserObj() function to get the author details
 and display them on the page. Make sure to display the first name, last name and gender in the appropriate elements. The final step is to display all of the
 articles a user likes. For this you will need to use the getLikesArray() function and loop through all likes to get the title of each liked article. Think
-carefully about how you can achieve this. Look at the example image to see what the finished result should look like. 
+carefully about how you can achieve this.  
+
+6. Look at the example image to see what the finished result should look like.
