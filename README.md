@@ -1,4 +1,4 @@
-Web Lab 09 &ndash; Advanced JavaScript & AJAX
+Web Self-Practice Exercise 09 &ndash; Advanced JavaScript & AJAX
 ==========
 
 Exercise 1 &ndash; Familiarising Yourself with AJAX, Fetch and Async Functions with Await
