@@ -1,7 +1,7 @@
 Web Self-Practice Exercise 09 &ndash; Advanced JavaScript & AJAX
 ==========
 
-Exercise 1 &ndash; Familiarising Yourself with AJAX, Fetch and Async Functions with Await
+Exercise 1 &ndash; Familiarising with AJAX, Fetch and Async Functions with Await
 ==========
 
 This is a very quick activity. The goal is to observe how a fetch request works and how to access the data. Open the HTML page for Exercise 1 and
