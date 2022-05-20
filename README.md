@@ -9,6 +9,7 @@ have a look at the JSON string received from the server and the HTML elements th
 are accessed and added to the HTML. 
 
 
+
 1. Now also display the id and author_id properties in the HTML by accessing these fields from the JSON object and creating HTML elements to display them. 
 Observe how we do not have the full text of the articles of the name of the authors. In activity 3 you will use more AJAX endpoints with these ids 
 as parameters to display more complete information.
